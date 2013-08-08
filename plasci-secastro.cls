@@ -4,10 +4,11 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{graphicx}
 \RequirePackage{geometry}
-\pagestyle{fancy}
+
 
 % Les marges
 \geometry{includehead,includefoot,margin=2.5cm}
+\pagestyle{fancy}
 % Les entêtes de page
 \chead{\Large\textbf{\@title}}
 \lhead{\includegraphics{secastro.png}}
@@ -15,4 +16,3 @@
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{1.25cm}
 \setlength{\headsep}{3\baselineskip}
-
