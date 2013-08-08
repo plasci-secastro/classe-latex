@@ -9,6 +9,7 @@
 % Les marges
 \geometry{includehead,includefoot,margin=2.5cm}
 \pagestyle{fancy}
+
 % Les entêtes de page
 \chead{\Large\textbf{\@title}}
 \lhead{\includegraphics{secastro.png}}
@@ -16,3 +17,8 @@
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{1.25cm}
 \setlength{\headsep}{3\baselineskip}
+
+% Les pieds de pages
+\setlength{\footskip}{1.25cm}
+\cfoot{}
+\rfoot{\thepage\hspace{1em}}
