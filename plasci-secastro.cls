@@ -4,14 +4,14 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{graphicx}
 \RequirePackage{geometry}
-
+\RequirePackage{xcolor}
 
 % Les marges
 \geometry{includehead,includefoot,margin=2.5cm}
 \pagestyle{fancy}
 
 % Les entêtes de page
-\chead{\Large\textbf{\@title}}
+\chead{\color{gray}\vfill\Huge{\@title}\vfill}
 \lhead{\includegraphics{secastro.png}}
 \rhead{\includegraphics{plasci.png}}
 \renewcommand{\headrulewidth}{0pt}
