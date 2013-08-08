@@ -7,10 +7,12 @@
 \pagestyle{fancy}
 
 % Les marges
-\geometry{margin=2.5cm}
+\geometry{includehead,includefoot,margin=2.5cm}
 % Les entêtes de page
 \chead{\Large\textbf{\@title}}
 \lhead{\includegraphics{secastro.png}}
 \rhead{\includegraphics{plasci.png}}
-\renewcommand{\headrulewidth}{0.pt}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{1.25cm}
+\setlength{\headsep}{3\baselineskip}
 
