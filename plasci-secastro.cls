@@ -11,12 +11,12 @@
 \pagestyle{fancy}
 
 % Les entêtes de page
-\chead{\color{gray}\vfill\Huge{\@title}\vfill}
+\chead{\includegraphics[width=\textwidth]{barrette.png}\vspace{0.5\baselineskip}\color{gray}\vfill\Huge{\@title}\vfill}
 \lhead{\includegraphics{secastro.png}}
 \rhead{\includegraphics{plasci.png}}
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{1.25cm}
-\setlength{\headsep}{3\baselineskip}
+\setlength{\headsep}{3.5\baselineskip}
 
 % Les pieds de pages
 \setlength{\footskip}{1.25cm}
