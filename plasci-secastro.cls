@@ -12,4 +12,5 @@
 \chead{\Large\textbf{\@title}}
 \lhead{\includegraphics{secastro.png}}
 \rhead{\includegraphics{plasci.png}}
+\renewcommand{\headrulewidth}{0.pt}
 
