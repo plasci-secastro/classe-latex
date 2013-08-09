@@ -11,7 +11,7 @@
 \pagestyle{fancy}
 
 % Les entêtes de page
-\chead{\includegraphics[width=\textwidth,height=2ex]{barrette.png}\vspace{0.5\baselineskip}\vfill\Huge{\@title}\vfill}
+\chead{\includegraphics[width=\textwidth,height=2ex]{barrette.png}\vspace{0.5\baselineskip}\vfill\vspace{0.5\baselineskip}\Huge{\@title}\vfill}
 \lhead{\includegraphics{secastro.png}}
 \rhead{\includegraphics{plasci.png}}
 \renewcommand{\headrulewidth}{0pt}
