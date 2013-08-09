@@ -7,7 +7,7 @@
 
 
 % Les marges
-\geometry{includehead,includefoot,margin=2.5cm}
+\geometry{includefoot,margin=2.5cm,bottom=3cm}
 \pagestyle{fancy}
 
 % Les entêtes de page
@@ -15,10 +15,10 @@
 \lhead{\includegraphics{secastro.png}}
 \rhead{\includegraphics{plasci.png}}
 \renewcommand{\headrulewidth}{0pt}
-\setlength{\headheight}{1.25cm}
-\setlength{\headsep}{3.5\baselineskip}
+\setlength{\headheight}{3cm}
+\setlength{\headsep}{\parskip}
 
 % Les pieds de pages
-\setlength{\footskip}{1.25cm}
-\cfoot{}
-\rfoot{\thepage\hspace{1em}}
+\setlength{\footskip}{0cm}
+\cfoot{\includegraphics[width=\textwidth]{barrette.png}\vfill}
+\rfoot{\vspace{\baselineskip}\vfill\thepage\hspace{1em}}
