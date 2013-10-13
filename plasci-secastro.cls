@@ -22,12 +22,16 @@
 
 % Le \maketitle
 \renewcommand{\maketitle}{%
-	\setlength{\parskip}{0pt}\par\leavevmode\vspace{-2ex}%
-		\begin{center}%
-		\parbox{0.5\textwidth}{%
-			\centering\emph{\@date}%
-			\par{\Large\@title}%
-			\par\@author%
-			}%
-		\end{center}\par%
+	{\setlength{\parindent}{0pt}\par\leavevmode\par
+				\begin{minipage}{0.2\textwidth}
+					\includegraphics[height=10ex]{plasci}
+				\end{minipage}
+				\begin{minipage}{0.6\textwidth}\centering\emph{\@date}%
+				\par{\Large\@title}%
+				\par\@author
+				\end{minipage}
+				\begin{minipage}{0.2\textwidth}
+					\hfill\includegraphics[height=10ex]{secastro}
+				\end{minipage}
+	\par\leavevmode\par}
 }
