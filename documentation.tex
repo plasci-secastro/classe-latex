@@ -1,0 +1,42 @@
+\documentclass{plasci-secastro}
+\usepackage{polyglossia,fontspec,xunicode,metalogo}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{lipsum}
+\setmainfont{Calibri}
+\setmainlanguage{french}
+\date{Campagne astro 2013}
+\author{Maïeul Rouquette}
+\title{\LaTeX\ pour compte rendu du secteur astronomie}
+\begin{document}
+\maketitle
+
+Utilisation :
+\begin{enumerate}
+	\item Télécharger sur \url{https://github.com/plasci-secastro/classe-latex/archive/master.zip} la classe et les fichiers image liés.
+	\item Les mettre dans un répertoire que \LaTeX\ peut trouver, par exemple le dossier avec le \verb+.tex.+ ou votre dossier de config local de \LaTeX\footnote{Voir \url{http://latex.developpez.com/faq/?page=LATEX_ADVANCED}.}.
+	\item La classe se charge normalement avec \verb+\documenclass{plasci-secastro}+. Elle propose les fonctions suivantes :
+		\begin{itemize}
+			\item Entête et pied de page avec la barrette Planète-Sciences.
+			\item Commande \verb+maketitle+ affichant les logos de Planète-Sciences et du Secteur Astro.
+			\item Pied de page contenant le titre
+		\end{itemize}
+	\item Il faut en revanche charger ses packages perso pour la gestion des caractères, des polices et de la typo :
+		\begin{itemize}
+			\item Avec \XeLaTeX:
+				\begin{minted}{tex}
+\usepackage{polyglossia,fontspec,xunicode}
+\setmainlanguage{french}
+\setmainfont{Calibri}% Ou tout autre
+				\end{minted}
+			\item Avec \LaTeX, si on encode en Unicode \textbf{Ce qui est toujours mieux}:
+				\begin{minted}{tex}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}  
+				\end{minted}
+		\end{itemize}
+	\item Évidemment vous pouvez aussi choisir d'ajouter d'autres packages.
+	\item Pour améliorer la classe, demander un accès au compte GitHub à Maïeul.
+\end{enumerate}
+\end{document}
