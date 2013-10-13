@@ -19,3 +19,8 @@
 
 \cfoot{\hspace*{-0.05\textwidth}\includegraphics[width=1.1\textwidth,height=2ex]{barrette.png}\vfill}
 \rfoot{\vspace{\baselineskip}\vfill\thepage\hspace{1em}}
+
+% Le \maketitle
+\renewcommand{\maketitle}{%
+	\leavevmode\vspace{1ex}\begin{center}\parbox{0.5\textwidth}{\centering\Large\@title}\end{center}\vspace{2ex}\par%
+}
