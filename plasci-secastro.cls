@@ -7,7 +7,7 @@
 
 
 % Les marges
-\geometry{includefoot,margin=2.5cm,bottom=3cm}
+\geometry{margin=2.5cm}
 \pagestyle{fancy}
 
 % Les entêtes de page
@@ -16,9 +16,12 @@
 \setlength{\headsep}{\parskip}
 
 % Les pieds de pages
-
-\cfoot{\hspace*{-0.05\textwidth}\includegraphics[width=1.1\textwidth,height=2ex]{barrette.png}\vfill}
-\rfoot{\vspace{\baselineskip}\vfill\thepage\hspace{1em}}
+\setlength{\footskip}{\parskip}
+\fancyfootoffset[L]{0.05\textwidth}
+\fancyfootoffset[R]{0.05\textwidth}
+\lfoot{\emph{\vfill\noindent\@title}}
+\cfoot{\includegraphics[width=1.1\textwidth,height=2ex]{barrette.png}}
+\rfoot{\leavevmode\vfill\thepage}
 
 % Le \maketitle
 \renewcommand{\maketitle}{%
