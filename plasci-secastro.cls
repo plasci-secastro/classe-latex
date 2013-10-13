@@ -22,5 +22,12 @@
 
 % Le \maketitle
 \renewcommand{\maketitle}{%
-	\leavevmode\vspace{1ex}\begin{center}\parbox{0.5\textwidth}{\centering\Large\@title}\end{center}\vspace{2ex}\par%
+	\setlength{\parskip}{0pt}\par\leavevmode\vspace{-2ex}%
+		\begin{center}%
+		\parbox{0.5\textwidth}{%
+			\centering\emph{\@date}%
+			\par{\Large\@title}%
+			\par\@author%
+			}%
+		\end{center}\par%
 }
