@@ -19,9 +19,9 @@
 \setlength{\footskip}{\parskip}
 \fancyfootoffset[L]{0.05\textwidth}
 \fancyfootoffset[R]{0.05\textwidth}
-\lfoot{\emph{\vfill\noindent\@title}}
-\cfoot{\includegraphics[width=1.1\textwidth,height=2ex]{barrette.png}}
-\rfoot{\leavevmode\vfill\thepage}
+\lfoot{\vspace{3ex}\emph{\vfill\noindent\@title}}
+\cfoot{\vspace{1ex}\includegraphics[width=1.1\textwidth,height=2ex]{barrette.png}}
+\rfoot{\leavevmode\vspace{3ex}\vfill\thepage}
 
 % Le \maketitle
 \renewcommand{\maketitle}{%
